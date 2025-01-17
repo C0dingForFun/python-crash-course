@@ -30,5 +30,20 @@
 #     print(y)
 
 # truthy and falsy
-if 0:
-    print('something')
+# if 'a':
+#     print('truthy')
+# else:
+#     print('falsy')
+
+# Exercise
+
+ex_list = (1, 2, 3, 4, 5)
+ex_counter = 0
+for x in ex_list:
+    if x == 2:
+        print('the value is 2')
+    else:
+        print('the value is not 2')
+while ex_counter <= 6:
+            print('last item')
+            ex_counter += 1
