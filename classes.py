@@ -47,17 +47,31 @@
 
 # Inheritance
 
-class Warrior:
-    def __init__(self, health):
-        self.health = health
+class Human:
+        def __init__(self, health):
+          self.health = health
+
+        def attack(self):
+             self.health
+
+class Warrior(Human):
+    def __init__(self, health, defense):
+        super().__init__(health)
+        self.defense = defense
 
     def attack(self):
         print('attack')
 
-class Barbarian:
-        def __init__(self, health):
-            self.health = health
+class Barbarian(Human):
+        def __init__(self, health, damage):
+            super().__init__(health)
+            self.damage = damage
 
         def attack(self):
             print('Attack')
      
+warrior = Warrior(50, 5.5)
+barbarian = Barbarian(100, 8.1)
+warrior.attack()
+barbarian.attack()
+print(warrior.health)
