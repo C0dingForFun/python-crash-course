@@ -1,4 +1,4 @@
-# # a basic class
+# a basic class
 # class TestClass:
 #     test_var = (1, 2, 3 )
 #     another_var = 'something'
@@ -25,9 +25,39 @@
 # test3 = TestClass()
 # test3.another_func()
 
-class Mage:
-    def __init__(self, health, mana):
+# class Mage:
+#     def __init__(self, health, mana):
+#         self.health = health
+#         self.mana = mana
+#         print('the mage class was created')
+#         # print(self.health)
 
-        print('the mage class was created')
+#     def attack(self, target):
+#         target.health -= 10
 
-mage = Mage()
+# class Monster:
+#     health = 40
+
+# mage = Mage(100, 200)
+# monster = Monster()
+
+# print(monster.health)
+# mage.attack(monster)
+# print(monster.health)
+
+# Inheritance
+
+class Warrior:
+    def __init__(self, health):
+        self.health = health
+
+    def attack(self):
+        print('attack')
+
+class Barbarian:
+        def __init__(self, health):
+            self.health = health
+
+        def attack(self):
+            print('Attack')
+     
