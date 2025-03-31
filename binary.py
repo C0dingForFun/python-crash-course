@@ -1,6 +1,6 @@
 # Working with binary files
-# Install Microsoft Hex Editor extension
-# Right click open with
+# Install Hex Editor extension
+# Right click and click 'open with'
 
 # Imports
 import random; # creates random numbers
@@ -38,8 +38,8 @@ def readBytes(filename):
     return bytes
         
 # See it in action 
-# Create the random bytes
 
+# Create the random bytes
 outBytes = randomBytes(12)
 displayBytes(outBytes)
 
